@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .cute{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .bigger {
+      font-size: 150%;
+    }
+    .mygreen {
+      color: rgb(0, 211, 60);
+    }
+    .headline {
+      color: blue;
+    }
+    .mylist{
+      color: green;    
+      font-size: large;  
+    }
+    </style>
+  <title>CSS in DOM Sample</title>
+</head>
+<body>
+  <div class="headline" name="bluediv">
+    <h2 id="subject" something="non-standard" >JavaScript Frameworks</h2>
+    <h3 name="desc" style="text-shadow: 1px 1px #FF0000;" >
+    Frameworks are software that is used by developers to build applications.
+    </h3>
+  </div>
+  <span name="desc">Popular Frameworks:</span>
+  <ul name="data" class="mylist">
+    <li>React</li>
+    <li>Angular</li>
+    <li>Vue</li>
+  </ul> 
+  <div>
+    <input id="liked" type="checkbox" checked> I like JavaScript!
+  </div>
+  <p id="question" style="background-color:gold">
+    What do you want to learn in future?
+  </p>
+  <div>
+    <input id="future" type="text" value="Everything!"> 
+  </div>
+  <script type="text/javascript">
+    let ulElem = document.querySelector("ul");
+    console.log(ulElem.className); // mylist
+    ulElem.className = "cute";
+    console.log(ulElem.className); // cute
+    ulElem.classList.add("bigger");
+    ulElem.classList.add("mygreen");
+    console.log(ulElem.className); // cute bigger mygreen
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8"/>
+  <style>
+          @font-face {
+        font-family: Vazir;
+        src: url("./assets/Vazir.ttf");
+      }
+      * {
+        font-family: Vazir;
+      }
+      body {
+        margin: 0;
+      }
+      nav {
+        background-color: #0a99cc;
+      }
+      li {
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+      }
+      ul {
+        all: initial;
+        list-style: none;
+        display: flex;
+      }
+      li.hover::after{
+        content: "";
+        border-radius: 5px 5px 0 0;
+        height: 3px;
+        width: unset;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0px;
+        right: 28px;
+        left: 28px;
+        }
+        @media screen and (min-width: 567px) {
+          ul{
+          flex-direction: row;
+          }
+        li{
+          width: 100px;
+        justify-content: center;
+        padding-right: 0;
+        }
+        }
+      @media screen and (max-width: 567px){
+        ul{
+          flex-direction: column;
+          }
+          li.hover::after{
+            content: "";
+            border-radius: 5px  0  0 5px;
+            height: 40px;
+            width: 5px;
+            background-color: #fff;
+            position: absolute;
+            right: 0px;
+            }
+      }
+  </style>
+</head>
+<html>
+  <body dir="rtl">
+    <nav>
+      <ul>
+        <li>لینک یک</li>
+        <li>لینک دو</li>
+        <li>لینک سه</li>
+        <li>لینک چهار</li>
+        <li>لینک پنج</li>
+      </ul>
+    </nav>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+$as : 12px;
+$a : color;
+@mixin parsa{
+    background-#{$a}: rgba(247, 86, 86, 0.692);
+}
+p{
+    @include parsa()
+}

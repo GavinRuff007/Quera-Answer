@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Parsa\Desktop\file\اسناد\software project\java\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3642023491.index
+131232155.index
